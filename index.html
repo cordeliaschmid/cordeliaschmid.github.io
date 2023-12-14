@@ -137,12 +137,27 @@
 
   <script>
       function loadContent(url) {
-    fetch(url)
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('content').innerHTML = data;
-        });
-    }
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                // Create a new DOM parser
+                var parser = new DOMParser();
+                // Parse the fetched HTML
+                var doc = parser.parseFromString(data, 'text/html');
+                // Extract the part you want to insert
+                var content = doc.getElementById('jobs-content');
+                // Insert the extracted part into the #home div
+                document.getElementById('home').innerHTML = content.innerHTML;
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            });
+        }
   </script>   
 
 </body>
