@@ -129,3 +129,22 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+
+/* Navigation button */
+.home-button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.home-button .arrow {
+  font-size: 30px;
+}
+
+.home-button .text {
+  margin-left: 10px;
+}
