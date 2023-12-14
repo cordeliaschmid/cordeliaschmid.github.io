@@ -60,14 +60,13 @@
           <td style="padding:20px;width:25%;vertical-align:middle">
 
         <!--- Buttons to get back to jobs -->
-        <div style="display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
+          <button class="home-button" id="home-button">
+            <img src="images/c.png" alt="Home" style="width: 20px; height: 20px;">
+          </button>
           <button class="home-button" id="jobs-button">
             <span class="arrow">&larr;</span>
             <span class="text">Jobs</span>
-          </button>
-          <button class="home-button" id="home-button">
-            <span class="arrow">&rarr;</span>
-            <span class="text">Home</span>
           </button>
         </div>
 
@@ -114,14 +113,14 @@
         --->
 
 
-  <script>
-    document.querySelector('#job-button').addEventListener('click', function() {
-        window.location.href = '/jobs';
-    });
-  document.querySelector('.home-button').addEventListener('click', function() {
-        window.location.href = '/';
-    });
-  </script>
+    <script>
+      document.querySelector('#jobs-button').addEventListener('click', function() {
+          window.location.href = '/jobs';
+      });
+      document.querySelector('.home-button').addEventListener('click', function() {
+          window.location.href = '/';
+      });
+    </script>
 
 
 
