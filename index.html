@@ -35,7 +35,7 @@
                 <a href="https://scholar.google.com/citations?user=IvqCXP4AAAAJ">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/cordelia-schmid-47985a9/"> LinkedIn </a> &nbsp/&nbsp
 		<a href="https://twitter.com/cordeliaschmid">Twitter</a> &nbsp/&nbsp
-    <a href="/jobs">Jobs</a>
+    <a href="/jobs" onclick="event.preventDefault(); loadContent('/jobs');">Jobs</a>
     
               </p>
             </td>
@@ -45,6 +45,11 @@
           </tr>
         </tbody></table>
         
+
+    <!--- Dynamically loaded section -->     
+
+        <div id="home">
+
 
 
         <!--- Short Bio section -->
@@ -95,14 +100,21 @@
               <heading><font color=#bb271a><font size=4>Available positions: </font></font> </heading>
               <p>
         <font size=3>
-          Internships and Postdoc positions are available for 2024, see <a href=/jobs font size="18px">Job Offers</a>.
+          Internships and Postdoc positions are available for 2024, see 
+          <a href=/jobs style="font-size: 16px;" onclick="event.preventDefault(); loadContent('/jobs');">Job Offers</a>.
         </font><br><br>
               </p>
             </td>
           </tr>
 
-       
 
+
+        </div>
+  <!--- End of dynamically loaded section -->      
+  
+        
+        
+        
         <!--- Footer section -->
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -119,6 +131,20 @@
       </td>
     </tr>
   </table>
+
+
+
+
+  <script>
+      function loadContent(url) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('content').innerHTML = data;
+        });
+    }
+  </script>   
+
 </body>
 
 </html>
