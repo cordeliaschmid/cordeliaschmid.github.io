@@ -53,7 +53,7 @@
 
       <!--- Jobs Section--->
 
-      <div id = "jobs-content">
+      <div id = "buttons">
 
         <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
@@ -69,10 +69,23 @@
             <span class="text">Jobs</span>
           </button>
         </div>
+        <br>
+
+        </td>
+        </tr>
+      </tbody></table>
+      </div>
 
         
+      
+
+      <div id = "topic1">
         
-                
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+
+          
         <heading>Internship topic : topic 1</heading>
         <br><br>
         <b><font size=3>Advisors :</font></b> Cordelia Schmid, <a href="https://cshizhe.github.io/">Shizhe Chen</a>
@@ -89,10 +102,62 @@
         To apply, please contact and send your CV to the supervisor(s) of the projects you are interested in.
       </td>
       </tr>
-    </tbody></table>
+      </tbody></table>
 
-  <br><br><br><br>
-  </div>
+    <br><br><br><br>
+    </div>
+
+
+
+      <div id = "topic2">
+          
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+
+          
+        <heading>Internship topic : topic 2</heading>
+        <br><br>
+        <b><font size=3>Advisors :</font></b> Cordelia Schmid, <a href="https://cshizhe.github.io/">Shizhe Chen</a>
+        <br><br>
+
+        Here put an image of the topic 2<br>
+
+        <b><font size=3>Topic :</font></b> Topics is about bla bla bla, do a resume <br>
+        To apply, please contact and send your CV to the supervisor(s) of the projects you are interested in. <br>
+        </td>
+        </tr>
+        </tbody></table>
+
+      <br><br><br><br>
+      </div>
+
+
+
+
+
+      <div id = "topic3">
+          
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+
+          
+        <heading>Internship topic : topic 3</heading>
+        <br><br>
+        <b><font size=3>Advisors :</font></b> Cordelia Schmid, <a href="https://cshizhe.github.io/">Shizhe Chen</a>
+        <br><br>
+
+        Here put an image of the topic 2<br>
+
+        <b><font size=3>Topic :</font></b> Topics is about bla bla bla, do a resume <br>
+        To apply, please contact and send your CV to the supervisor(s) of the projects you are interested in. <br>
+        </td>
+        </tr>
+        </tbody></table>
+
+      <br><br><br><br>
+      </div>
 
         
         
@@ -120,6 +185,22 @@
       document.querySelector('.home-button').addEventListener('click', function() {
           window.location.href = '/';
       });
+
+      window.onload = function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var div = urlParams.get('topic');
+      
+        document.getElementById('topic1').style.display = 'none';
+        document.getElementById('topic2').style.display = 'none';
+        document.getElementById('topic3').style.display = 'none';
+      
+        if (div) {
+          document.getElementById('topic' + div).style.display = 'block';
+        }
+        else {
+        document.getElementById('topic1').style.display = 'block';
+        }
+      };
     </script>
 
 
