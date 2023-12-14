@@ -13,7 +13,6 @@
 
 <body>
 
-
   <!--- to show header with photo & coordinates
 
   <div id="intro"> 
@@ -49,6 +48,85 @@
 
     </div> 
     --->
+
+  
+
+      <!--- Jobs Section--->
+
+      <div id = "jobs-content">
+
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+
+        <!--- Buttons to get back to jobs -->
+        <button class="home-button" id="jobs-button">
+          <span class="arrow">&larr;</span>
+          <span class="text">Jobs</span>
+        </button> 
+        <!--- Button to get back home, right aligned-->
+        <button class="home-button" id="home-button" style="float:right">
+          <span class="arrow">&rarr;</span>
+          <span class="text">Home</span>
+        <br> 
+
+        
+        
+                
+        <heading>Internship topic : topic 1</heading>
+        <br><br>
+        <b><font size=3>Advisors :</font></b> Cordelia Schmid, <a href="https://cshizhe.github.io/">Shizhe Chen</a>
+        <br><br>
+
+        Here put an image of the topic
+
+        <b><font size=3>Topic :</font></b> Topics is about bla bla bla, do a resume
+        <ul class="nested-list">
+            <li>eventually </li>
+            <li>list some </li>
+            <li>stuff </li>
+        </ul>
+        To apply, please contact and send your CV to the supervisor(s) of the projects you are interested in.
+      </td>
+      </tr>
+    </tbody></table>
+
+  <br><br><br><br>
+  </div>
+
+  
+      
+        
+        
+        <!--- Footer section -->
+
+        <!---
+        <div id="footer">
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                 Inspired from <a href="https://jonbarron.info/">John Barron's</a> original template and <a href="https://a-nagrani.github.io">Arsha Nagrani's</a> website.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        </div>
+        --->
+
+
+  <script>
+  document.querySelector('.home-button').addEventListener('click', function() {
+        window.location.href = '/';
+    });
+  </script>
+
+
+
+</body>
+
+</html>
 
   
 
@@ -100,6 +178,7 @@
         
         
         <!--- Footer section -->
+        <!---
         <div id="footer">
         <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
@@ -112,14 +191,15 @@
           </tr>
         </tbody></table>
         </div>
+        --->
 
 
   <script>
     document.querySelector('#job-button').addEventListener('click', function() {
-        window.location.href = 'jobs.html';
+        window.location.href = '/jobs';
     });
   document.querySelector('#home-button').addEventListener('click', function() {
-        window.location.href = 'index.html';
+        window.location.href = '/';
     });
   </script>
 
