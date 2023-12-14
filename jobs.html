@@ -1,16 +1,20 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Cordelia Schmid - Jobs</title>
+<html lang="en"><head><meta charset="UTF-8">
+
+  <title>Cordelia Schmid</title>
   
-    <meta name="author" content="Gabriel Fiastre">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="icon" type="image/png" href="images/c.png">
-  </head>
+  <meta name="author" content="Gabriel Fiastre">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  
-  <body>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/c.png">
+
+</head>
+
+<body>
+
+
+  <div id="intro">
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -19,22 +23,22 @@
               <td style="padding:2.5%;width:65%;vertical-align:middle">
                 <p style="text-align:center">
                   <name>Cordelia schmid</name>
-          <br>
-           <a href="mailto:cordelia.schmid@inria.fr", style="color:grey">cordelia.schmid at inria dot fr</a>
-          <br>
-          <br>
+      <br>
+      <a href="mailto:cordelia.schmid@inria.fr", style="color:grey">cordelia.schmid at inria dot fr</a>
+      <br>
+      <br>
                 <p style="text-align:center"> <font size=3> 
                 Research Director in the 
                 <a href="http://www.di.ens.fr/willow/">WILLOW</a> project team </font><br>
                 <font size=3> <a href="https://www.inria.fr/centre/paris">Inria Paris</a>, <a href="https://www.di.ens.fr/">DI ENS</a> </font> 
                 </p>
-  
+
                 <p style="text-align:center">
                   <a href="data/Cordelia_CV.pdf">CV</a> &nbsp/&nbsp
                   <a href="https://scholar.google.com/citations?user=IvqCXP4AAAAJ">Google Scholar</a> &nbsp/&nbsp
                   <a href="https://www.linkedin.com/in/cordelia-schmid-47985a9/"> LinkedIn </a> &nbsp/&nbsp
-          <a href="https://twitter.com/cordeliaschmid">Twitter</a> &nbsp/&nbsp
-      <a href="/jobs" onclick="event.preventDefault(); loadContent('/jobs');">Jobs</a>
+      <a href="https://twitter.com/cordeliaschmid">Twitter</a> &nbsp/&nbsp
+      <a href="/jobs">Jobs</a>
       
                 </p>
               </td>
@@ -44,23 +48,28 @@
             </tr>
           </tbody></table>
           
-        
-    
-    
-    
-    
-    
+          </td>
+        </tr>
+      </tbody>
+      </table>
+      </div>
+
+  
+
+      <!--- Jobs Section--->
+
       <div id = "jobs-content">
 
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:0px">
+
         <!--- Button to get back home -->
-        <button class="home-button">
-            <span class="arrow">&larr;</span>
-            <span class="text">HOME</span>
+        <button class="home-button" id="home-button">
+          <span class="arrow">&larr;</span>
+          <span class="text">HOME</span>
         </button>
         <br> 
-
-
-        <!--- Short Bio section -->
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 	
@@ -84,23 +93,38 @@
                 To apply, please contact and send your CV to the supervisor(s) of the projects you are interested in.
             </td>
             </tr>
-        </tbody></table>
+          </tbody></table>
         
-        <br><br><br><br>
+          <br><br><br><br>
+         </td>
+         </tr>
+         </tbody></table>
+      </div>
 
-    </div>
+  
+        
+        
+        
+        <!--- Footer section -->
+        <div id="footer">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                 Inspired from <a href="https://jonbarron.info/">John Barron's</a> original template and <a href="https://a-nagrani.github.io">Arsha Nagrani's</a> website.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        </div>
 
-    </td>
-    </tr>
-    </table>
-
-
-<!--- Script for the button -->
-<script>
-    document.querySelector('.home-button').addEventListener('click', function() {
+  <script>
+  document.querySelector('.home-button').addEventListener('click', function() {
         window.location.href = '/';
     });
-</script>
+  </script>
+
 
 
 </body>
