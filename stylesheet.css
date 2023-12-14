@@ -134,10 +134,10 @@ span.highlight {
 /* Navigation button */
 .home-button {
   font-size: 20px;
-  padding: 10px 20px;
+  padding: 5px 5px;
   border: none;
-  background-color: #4CAF50;
-  color: white;
+  color: #097DA5;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -146,5 +146,15 @@ span.highlight {
 }
 
 .home-button .text {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
   margin-left: 10px;
+  /*Align in the middle vertically*/
+  position: relative;
+  
+}
+
+.home-button:hover,
+.home-button:focus {
+  color: #f09228;
+  text-decoration: none;
 }
