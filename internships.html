@@ -84,6 +84,7 @@
       <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="imgDisplay">
+        <div id="caption"></div>
       </div>
 
 
@@ -167,9 +168,18 @@
         <b><font size=3>Advisors :</font></b> Cordelia Schmid, <a href="https://cshizhe.github.io/">Shizhe Chen</a>
         <br><br>
 
-        <img class="myImg" src="data/internships/chapterGeneration.png" alt="Internship topic image on chapter generation and grounding in long-term videos" 
-        style="width:100%;max-width:100%" class="hoverZoomLink">
 
+        <figure>
+          <img class="myImg" src="data/internships/chapterGeneration1.png" 
+               style="width:100%;max-width:100%" class="hoverZoomLink">
+          <figcaption>Figure 1: A video with user-annotated chapters in VidChapters-7M </figcaption>
+        </figure>
+        
+        <figure>
+          <img class="myImg" src="data/internships/chapterGeneration2.png" 
+               style="width:100%;max-width:100%" class="hoverZoomLink">
+          <figcaption>Figure 2: The three tasks defined for VidChapters-7M </figcaption>
+        </figure>
 
         <b><font size=3>Topic :</font></b> Topics is about bla bla bla, do a resume <br>
         To apply, please contact and send your CV to the supervisor(s) of the projects you are interested in. <br>
@@ -207,7 +217,7 @@
           window.location.href = '/';
       });
 
-      
+
       window.onload = function() {
         var urlParams = new URLSearchParams(window.location.search);
         var div = urlParams.get('topic');
@@ -222,11 +232,13 @@
         var modal = document.getElementById("myModal");
         var imgs = document.getElementsByClassName("myImg");
         var modalImg = document.getElementById("imgDisplay");
+        var captionText = document.getElementById("caption");
 
         for (let i = 0; i < imgs.length; i++) {
           imgs[i].onclick = function(){
             modal.style.display = "block";
             modalImg.src = this.src;
+            captionText.innerHTML = this.nextElementSibling.innerHTML;
           }
         }
 
