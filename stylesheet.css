@@ -175,6 +175,24 @@ span.highlight {
 }
 
 
+/* Back of the page nav links */
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 200px; /* Adjust as needed */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #097DA5;
+  font-weight: bold;
+}
+
+.divider {
+  padding: 0 10px;
+}
+
 /* Image displayer */
 
 .modal {
