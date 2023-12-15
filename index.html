@@ -144,8 +144,8 @@
       img.onclick = function(){
         modal.style.display = "flex";
         modalImg.src = this.src;
-        modalImg.style.width = "60%";
-        modalImg.style.height = "60%";
+        modalImg.style.maxWidth = "60%";
+        modalImg.style.maxHeight = "60%";
       }
 
       var span = document.getElementsByClassName("close")[0];
