@@ -83,7 +83,7 @@
       <!-- Preparing image displayer -->
       <div id="myModal" class="modal">
         <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
+        <img class="modal-content" id="imgDisplay">
       </div>
 
 
@@ -101,7 +101,7 @@
         <b><font size=3>Advisors :</font></b> Cordelia Schmid, <a href="https://cshizhe.github.io/">Shizhe Chen</a>
         <br><br>
 
-        <img id="myImg" src="data/internships/3DVisionLanguageDiffusionPretrain.png" alt="Internship topic image on 3D vision and language diffusion pretraining"
+        <img class="myImg" src="data/internships/3DVisionLanguageDiffusionPretrain.png" alt="Internship topic image on 3D vision and language diffusion pretraining"
         style="width:100%;max-width:100%" class="hoverZoomLink">
 
         <b><font size=3>Topic :</font></b> Topics is about bla bla bla, do a resume
@@ -138,7 +138,7 @@
         <b><font size=3>Advisors :</font></b> Cordelia Schmid, <a href="https://cshizhe.github.io/">Shizhe Chen</a>
         <br><br>
 
-        <img id="myImg" src="data/internships/Xembodiment.png" alt="Internship topic image on X-embodiment: learning robotic manipulation at scale"
+        <img class="myImg" src="data/internships/Xembodiment.png" alt="Internship topic image on X-embodiment: learning robotic manipulation at scale"
         style="width:100%;max-width:100%" class="hoverZoomLink">
 
         <b><font size=3>Topic :</font></b> Topics is about bla bla bla, do a resume <br>
@@ -167,7 +167,7 @@
         <b><font size=3>Advisors :</font></b> Cordelia Schmid, <a href="https://cshizhe.github.io/">Shizhe Chen</a>
         <br><br>
 
-        <img id="myImg" src="data/internships/chapterGeneration.png" alt="Internship topic image on chapter generation and grounding in long-term videos" 
+        <img class="myImg" src="data/internships/chapterGeneration.png" alt="Internship topic image on chapter generation and grounding in long-term videos" 
         style="width:100%;max-width:100%" class="hoverZoomLink">
 
 
@@ -207,34 +207,34 @@
           window.location.href = '/';
       });
 
+      
       window.onload = function() {
         var urlParams = new URLSearchParams(window.location.search);
         var div = urlParams.get('topic');
-      
+
         if (div) {
           document.getElementById('topic' + div).style.display = 'block';
         }
         else {
-        document.getElementById('topic1').style.display = 'block';
+          document.getElementById('topic1').style.display = 'block';
+        }
+
+        var modal = document.getElementById("myModal");
+        var imgs = document.getElementsByClassName("myImg");
+        var modalImg = document.getElementById("imgDisplay");
+
+        for (let i = 0; i < imgs.length; i++) {
+          imgs[i].onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+          }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+          modal.style.display = "none";
         }
       };
-
-
-
-
-
-      var modal = document.getElementById("myModal");
-      var img = document.getElementById("myImg");
-      var modalImg = document.getElementById("img01");
-      img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-      }
-
-      var span = document.getElementsByClassName("close")[0];
-      span.onclick = function() { 
-        modal.style.display = "none";
-      }
     </script>
 
 
