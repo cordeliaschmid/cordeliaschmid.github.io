@@ -216,8 +216,8 @@ span.highlight {
 
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: -15px;
+  right: -35px;
   color: #9a9898;
   font-size: 40px;
   font-weight: bold;
