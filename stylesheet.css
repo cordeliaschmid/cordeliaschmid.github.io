@@ -180,7 +180,7 @@ span.highlight {
 .nav-links {
   display: flex;
   justify-content: space-between;
-  width: 80px; /* Adjust as needed */
+  width: 120px; /* Adjust as needed */
   margin: auto;
 }
 
