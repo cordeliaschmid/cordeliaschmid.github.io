@@ -163,3 +163,14 @@ span.highlight {
   color: #f09228;
   text-decoration: none;
 }
+
+
+
+/* Internships */
+.topic1{
+  display: block;
+}
+.topic2, 
+.topic3{
+  display: none;
+}
