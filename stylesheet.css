@@ -188,7 +188,6 @@ span.highlight {
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.9);
-  display: flex;
   align-items: center;
   justify-content: center;
 }
