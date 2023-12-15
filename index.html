@@ -17,7 +17,9 @@
   <!-- Image displayer-->
   <div id="myModal" class="modal">
     <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
+    <div class="modal-content">
+      <img id="imgDisplay">
+    </div>
   </div>
 
   <!--- Introduction header -->
@@ -138,19 +140,25 @@
         </div>
 
 <script>
+      
+      window.onload = function() {
       var modal = document.getElementById("myModal");
-      var img = document.getElementById("myImg");
-      var modalImg = document.getElementById("img01");
-      img.onclick = function(){
-        modal.style.display = "flex";
-        modalImg.src = this.src;
-        modalImg.style.maxHeight = "60%";
+      var imgs = document.getElementsByClassName("myImg");
+      var modalImg = document.getElementById("imgDisplay");
+
+      for (var i = 0; i < imgs.length; i++) {
+        imgs[i].onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          modalImg.style.maxHeight = "60vh";
+        }
       }
 
       var span = document.getElementsByClassName("close")[0];
       span.onclick = function() { 
         modal.style.display = "none";
       }
+    };
 </script>
 
 
