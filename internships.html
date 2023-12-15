@@ -114,26 +114,26 @@
 
         <b><font size=3>Motivation</font></b> <br>
 
-        3D understanding [1] has received growing research attention due to the rapid development of 3D sensors and the increasing demand in 
+        3D understanding <a href="#ref1">[1]</a> has received growing research attention due to the rapid development of 3D sensors and the increasing demand in 
         real world applications such as virtual reality, 3D animations and robotics. Inspired by the success of pre-training 2D vision-and-language models 
-        (VLMs) [2], recent work has been exploring the use of 2D VLMs as a bridge to connect 3D and text for 3D understanding [3,4] and generation [5]. 
+        (VLMs) <a href="#ref1">[2]</a>, recent work has been exploring the use of 2D VLMs as a bridge to connect 3D and text for 3D understanding <a href="#ref1">[3]</a>,<a href="#ref1">[4]</a> and generation <a href="#ref1">[5]</a>. 
         These approaches are, however, computationally expensive as they require processing of multi-view images aligned with the 3D data. 
-        Therefore, directly pre-training 3D models with cross-modal distillation has emerged  [6,7]. 
+        Therefore, directly pre-training 3D models with cross-modal distillation has emerged  <a href="#ref1">[6,7]</a>. 
         To further advance 3D pre-training for various 3D understanding and generation applications, this project aims at 
-        pre-training a unified 3D vision and language model based on diffusion techniques [10,11,12].
+        pre-training a unified 3D vision and language model based on diffusion techniques <a href="#ref1">[10,11,12]</a>.
         <br><br>
 
         <b><font size=3>Description</font></b> <br>
 
         <ul class="nested-list">
             <li>
-              Read and understand the state-of-the-art 2D and 3D diffusion models for representation learning and text-to-image/3D generation [11,12,13].
+              Read and understand the state-of-the-art 2D and 3D diffusion models for representation learning and text-to-image/3D generation <a href="#ref1">[11,12,13]</a>.
             </li>
             <li>
               Design a unified framework based on diffusion models to combine text, 2D image and 3D point clouds and investigate pre-training objectives.
             </li>
             <li>
-              Pre-train the model on large-scale 3D datasets [8,9] and evaluate the performance for downstream tasks such as 3D classification, 3D segmentation, 
+              Pre-train the model on large-scale 3D datasets <a href="#ref1">[8,9]</a> and evaluate the performance for downstream tasks such as 3D classification, 3D segmentation, 
               image/text-to-3D grounding, image/text-to-3D generation, and 3D completion.
             </li>
         </ul>
@@ -147,6 +147,7 @@
         If we find a mutual match the project can lead to a PhD in the Willow group.
         <br><br>
 
+        <div id="#ref1">
         <b><font size=3>References</font></b> <br>
         [1] Guo Y, Wang H, Hu Q, et al. Deep learning for 3D point clouds: A survey. IEEE T-PAMI 2020.<br>
         [2] Gan Z, Li L, Li C, et al. Vision-language pre-training: Basics, recent advances, and future trends. Foundations and Trends in Computer Graphics and Vision, 2022.<br>
@@ -161,7 +162,7 @@
         [11] Wei C, Mangalam K, Huang P Y, et al. Diffusion Models as Masked Autoencoders. ICCV 2023.<br>
         [12] Rombach R, Blattmann A, Lorenz D, et al. High-resolution image synthesis with latent diffusion models. CVPR 2022.<br>
         [13] Luo S, Hu W. Diffusion probabilistic models for 3d point cloud generation. CVPR 2021.<br>
-      
+        </div>
       
       </td>
       </tr>
@@ -205,18 +206,18 @@
         <b><font size=3>Motivation</font></b> <br>
 
         Training high-capacity models on large-scale datasets has led to great success in many fields such as natural language understanding and computer vision. 
-        However, such a technique is hard to apply in robotics due to limited data. Recently, an ensembled robotic dataset [1] has been released containing 1M episodes 
+        However, such a technique is hard to apply in robotics due to limited data. Recently, an ensembled robotic dataset <a href="#ref2">[1]</a> has been released containing 1M episodes 
         of 527 skills (160266 tasks) from 22 different robots, and has shown to be beneficial to improve performance and develop emergent skills across robots. 
         However, it is still challenging to unify different robot sensors and action spaces and to generalize to new scenarios with new camera configurations and embodiments. 
-        This project aims at exploring representations [3,4], action policies [2] and learning algorithms [5,6] that can transfer from the large-scale real robot data 
-        to different robots such as the UR5 robot arm in our team at Inria. 
+        This project aims at exploring representations <a href="#ref2">[2,3]</a>, action policies <a href="#ref2">[4]</a> and learning algorithms <a href="#ref2">[5,6]</a> that can transfer 
+        from the large-scale real robot data to different robots such as the UR5 robot arm in our team at Inria.
         <br><br>
 
         <b><font size=3>Description</font></b> <br>
 
         <ul class="nested-list">
             <li>
-              Read and understand the robot learning papers [2-6].
+              Read and understand the robot learning papers <a href="#ref2">[2-6]</a>.
             </li>
             <li>
               Investigate modular approaches to take advantage of the large-scale real robot data
@@ -247,14 +248,15 @@
         If we find a mutual match the project can lead to a PhD in the Willow group.
         <br><br>
 
+        <div id="#ref2">
         <b><font size=3>References</font></b> <br>
         [1] Padalkar A, Pooley A, Jain A, et al. Open X-embodiment: Robotic learning datasets and RT-X models. arXiv preprint arXiv:2310.08864, 2023.<br>
-        [2] Shi L X, Sharma A, Zhao T Z, et al. Waypoint-based imitation learning for robotic manipulation. CoRL 2023.<br>
-        [3] Radosavovic I, Xiao T, James S, et al. Real-world robot learning with masked visual pre-training. CoRL 2022.<br>
-        [4] Radosavovic I, Shi B, Fu L, et al. Robot Learning with Sensorimotor Pre-training. CoRL 2023.<br>
+        [2] Radosavovic I, Xiao T, James S, et al. Real-world robot learning with masked visual pre-training. CoRL 2022.<br>
+        [3] Radosavovic I, Shi B, Fu L, et al. Robot Learning with Sensorimotor Pre-training. CoRL 2023.<br>
+        [4] Shi L X, Sharma A, Zhao T Z, et al. Waypoint-based imitation learning for robotic manipulation. CoRL 2023.<br>
         [5] Chebotar Y, Vuong Q, Irpan A, et al. Q-transformer: Scalable offline reinforcement learning via autoregressive q-functions. CoRL 2023.<br>
         [6] Alakuijala M, Dulac-Arnold G, Mairal J, et al. Learning reward functions for robotic manipulation by observing humans. ICRA 2023.<br>
-
+        </div>
 
         </td>
         </tr>
@@ -304,7 +306,7 @@
         short video clips has received considerable attention, long-term video indexing and searching remain challenging and have been less explored. 
         A compelling solution to facilitate long-term video indexing and searching is to segment long-term videos into chapters as depicted in Figure 1. 
         These chapters are structured and labeled with a short, concise description, enabling users to quickly navigate to areas of interest. 
-        A recent work [1] has introduced the VidChapter-7M benchmark dataset for the problem, containing 817K videos with speech transcripts and user-annotated chapters. 
+        A recent work <a href="#ref3">[1]</a> has introduced the VidChapter-7M benchmark dataset for the problem, containing 817K videos with speech transcripts and user-annotated chapters. 
         This project aims to tackle the three tasks defined for VidChapters-7M (see Figure 2), including video chapter generation that requires 
         automatic video segmentation and captioning, video chapter generation with ground-truth boundaries, and video chapter grounding 
         that needs to localize the desired video segment given the chapter title.
@@ -314,13 +316,14 @@
 
         <ul class="nested-list">
             <li>
-              Read the dataset paper [1] and reproduce the state-of-the-art methods [2,3] on the VidChapters-7M and two evaluation datasets [4,5] with the released codes and models
+              Read the dataset paper <a href="#ref3">[1]</a> and reproduce the state-of-the-art methods <a href="#ref3">[2,3]</a> on the VidChapters-7M 
+              and two evaluation datasets <a href="#ref3">[4,5]</a> with the released codes and models
             </li>
             <li>
-              Extend [2,3] to train a unified backbone using multi-modal inputs with vision and speech transcripts and separate decoders for video chapter generation and grounding.
+              Extend <a href="#ref3">[2,3]</a> to train a unified backbone using multi-modal inputs with vision and speech transcripts and separate decoders for video chapter generation and grounding.
             </li>
             <li>
-              Explore diffusion models [6] as the decoders to iteratively segment and ground the long-term videos, inspired by diffusion models for object detection [7].
+              Explore diffusion models <a href="#ref3">[6]</a> as the decoders to iteratively segment and ground the long-term videos, inspired by diffusion models for object detection <a href="#ref3">[7]</a>.
 
             </li>
         </ul>
@@ -334,6 +337,7 @@
         If we find a mutual match, the project can lead to a joint PhD in video understanding at Ecole Polytechnique and in the Willow Group of Inria Paris.  
         <br><br>
 
+        <div id="#ref3">
         <b><font size=3>References</font></b> <br>
         [1] Yang A, Nagrani A, Laptev I, et al. VidChapters-7M: Video Chapters at Scale. NeurIPS, 2023. [<a href="https://antoyang.github.io/vidchapters.html">Project page</a>]<br>
         [2] Yang A, Nagrani A, Seo P H, et al. Vid2seq: Large-scale pretraining of a visual language model for dense video captioning. CVPR 2023.<br>
@@ -342,7 +346,7 @@
         [5] Huang G, Pang B, Zhu Z, et al. Multimodal pretraining for dense video captioning. AACL-IJCNLP 2020.<br>
         [6] Ho J, Jain A, Abbeel P. Denoising diffusion probabilistic models. NeurIPS 2020.<br>
         [7] Chen S, Sun P, Song Y, et al. Diffusiondet: Diffusion model for object detection. CVPR 2023.<br>
-
+        </div>
 
         </td>
         </tr>
