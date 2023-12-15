@@ -180,7 +180,7 @@ span.highlight {
 .nav-links {
   display: flex;
   justify-content: space-between;
-  width: 60px; /* Adjust as needed */
+  width: 80px; /* Adjust as needed */
   margin: auto;
 }
 
@@ -190,7 +190,7 @@ span.highlight {
 }
 
 .divider {
-  padding: 0 5px;
+  padding: 0 8px;
 }
 
 /* Image displayer */
