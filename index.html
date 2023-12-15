@@ -14,14 +14,6 @@
 <body>
 
 
-  <!-- Image displayer-->
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <div class="modal-content">
-      <img id="imgDisplay">
-    </div>
-  </div>
-
   <!--- Introduction header -->
   <div id="intro">
           <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -138,31 +130,6 @@
           </tr>
         </tbody></table>
         </div>
-
-<script>
-      
-      window.onload = function() {
-      var modal = document.getElementById("myModal");
-      var imgs = document.getElementsByClassName("myImg");
-      var modalImg = document.getElementById("imgDisplay");
-
-      for (var i = 0; i < imgs.length; i++) {
-        imgs[i].onclick = function(){
-          modal.style.display = "block";
-          modalImg.src = this.src;
-          modalImg.style.maxHeight = "60vh";
-          modalImg.style.width ="auto";
-          // modalImg.style.objectFit = "contain";
-
-        }
-      }
-
-      var span = document.getElementsByClassName("close")[0];
-      span.onclick = function() { 
-        modal.style.display = "none";
-      }
-    };
-</script>
 
 
 </body>
