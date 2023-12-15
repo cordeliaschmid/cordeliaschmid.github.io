@@ -180,17 +180,17 @@ span.highlight {
 .nav-links {
   display: flex;
   justify-content: space-between;
-  width: 200px; /* Adjust as needed */
+  width: 60px; /* Adjust as needed */
+  margin: auto;
 }
 
 .nav-link {
   text-decoration: none;
   color: #097DA5;
-  font-weight: bold;
 }
 
 .divider {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 /* Image displayer */
