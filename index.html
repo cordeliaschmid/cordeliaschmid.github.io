@@ -17,7 +17,7 @@
   <!-- Image displayer-->
   <div id="myModal" class="modal">
     <span class="close">&times;</span>
-    <img class="modal-profilePic" id="img01">
+    <img class="modal-content" id="img01">
   </div>
 
   <!--- Introduction header -->
@@ -143,6 +143,8 @@
       var modalImg = document.getElementById("img01");
       img.onclick = function(){
         modal.style.display = "block";
+        modal.style.width = "70%";
+        modal.style.height = "70%";
         modalImg.src = this.src;
       }
 

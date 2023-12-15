@@ -199,14 +199,6 @@ span.highlight {
 }
 
 
-.modal-profilePic {
-  margin: auto;
-  display: block;
-  width: 70%;
-  height: 70%;
-  object-fit: contain;
-}
-
 .close {
   position: absolute;
   top: 15px;
