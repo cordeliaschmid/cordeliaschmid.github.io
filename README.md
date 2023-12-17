@@ -1,2 +1,2 @@
-# gabfstr.github.io
+# cordeliaschmid.github.io
 personal website
