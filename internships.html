@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta charset="UTF-8">
+
+  <title>Cordelia Schmid</title>
+  
+  <meta name="author" content="Gabriel Fiastre">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/c.png">
+
+</head>
+
+<body>
+
+  <!--- to show header with photo & coordinates
+
+  <div id="intro"> 
+          <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:65%;vertical-align:middle">
+                <p style="text-align:center">
+                  <name>Cordelia schmid</name>
+      <br>
+      <a href="mailto:cordelia.schmid@inria.fr", style="color:grey">cordelia.schmid at inria dot fr</a>
+      <br>
+      <br>
+                <p style="text-align:center"> <font size=3> 
+                Research Director in the 
+                <a href="http://www.di.ens.fr/willow/">WILLOW</a> project team </font><br>
+                <font size=3> <a href="https://www.inria.fr/centre/paris">Inria Paris</a>, <a href="https://www.di.ens.fr/">DI ENS</a> </font> 
+                </p>
+
+                <p style="text-align:center">
+                  <a href="data/Cordelia_CV.pdf">CV</a> &nbsp/&nbsp
+                  <a href="https://scholar.google.com/citations?user=IvqCXP4AAAAJ">Google Scholar</a> &nbsp/&nbsp
+                  <a href="https://www.linkedin.com/in/cordelia-schmid-47985a9/"> LinkedIn </a> &nbsp/&nbsp
+      <a href="https://twitter.com/cordeliaschmid">Twitter</a> &nbsp/&nbsp
+      <a href="/jobs">Jobs</a>
+      
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/cordelia.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/cordelia.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+
+    </div> 
+    --->
+
+  
+
+      <!--- Navigation Buttons Section--->
+
+      <div id = "buttons">
+
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+          <td style="padding:0px;padding-left:20px;width:25%;vertical-align:middle">
+
+          <div style="display: block; flex-direction: column; align-items: left; justify-content: space-between;">
+          <button class="home-button" id="home-button" style="padding-top: 10px; padding-bottom: 10px;">
+            <img src="images/home.png" alt="Home" style="width: 30px; height: 30px;">
+          </button>
+          <button class="home-button" id="jobs-button">
+            <span class="arrow">&larr;</span>
+            <span class="text">Jobs</span>
+          </button>
+        </div>
+
+        </td>
+        </tr>
+      </tbody></table>
+      </div>
+
+        
+      
+
+
+<!--- Text section -->
+
+      <!-- Preparing image displayer -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <img id="imgDisplay">
+          <div id="caption"></div>
+        </div>
+      </div>
+
+
+  <!--- Topic 1 -->
+
+      <div id = "topic1" class="topic">
+        
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+
+          
+        <heading>Internship topic : Unified 3D vision and language pre-training with diffusion models</heading>
+        <br><br>
+        <b><font size=3>Advisors :</font></b> <a href="https://cshizhe.github.io/">Shizhe Chen</a> &lt;shizhe.chen@inria.fr&gt;, Cordelia Schmid &lt;cordelia.schmid@inria.fr&gt;
+        <br>
+        <b><font size=3>Location :</font></b> Willow Group, Inria Paris
+        <br><br>
+        
+        <figure>
+        <img class="myImg" src="data/internships/3DVisionLanguageDiffusionPretrain.png" alt="Internship topic image on 3D vision and language diffusion pretraining"
+        style="width:100%;max-width:100%" class="hoverZoomLink">
+        <figcaption>Figure 1: A pre-training framework for large-scale 3D representation learning (Uni3D <a href="#ref1">[7]</a>)</figcaption>
+      </figure>
+
+        <b><font size=3>Motivation</font></b> <br>
+
+        3D understanding <a href="#ref1">[1]</a> has received growing research attention due to the rapid development of 3D sensors and the increasing demand in 
+        real world applications such as virtual reality, 3D animations and robotics. Inspired by the success of pre-training 2D vision-and-language models 
+        (VLMs) <a href="#ref1">[2]</a>, recent work has been exploring the use of 2D VLMs as a bridge to connect 3D and text for 3D understanding <a href="#ref1">[3,4]</a> 
+        and generation <a href="#ref1">[5]</a>. 
+        These approaches are, however, computationally expensive as they require processing of multi-view images aligned with the 3D data. 
+        Therefore, directly pre-training 3D models with cross-modal distillation has emerged  <a href="#ref1">[6,7]</a>. 
+        To further advance 3D pre-training for various 3D understanding and generation applications, this project aims at 
+        pre-training a unified 3D vision and language model based on diffusion techniques <a href="#ref1">[10,11,12]</a>.
+        <br><br>
+
+        <b><font size=3>Description</font></b> <br>
+
+        <ul class="nested-list">
+            <li>
+              Read and understand the state-of-the-art 2D and 3D diffusion models for representation learning and text-to-image/3D generation <a href="#ref1">[11,12,13]</a>.
+            </li>
+            <li>
+              Design a unified framework based on diffusion models to combine text, 2D image and 3D point clouds and investigate pre-training objectives.
+            </li>
+            <li>
+              Pre-train the model on large-scale 3D datasets <a href="#ref1">[8,9]</a> and evaluate the performance for downstream tasks such as 3D classification, 3D segmentation, 
+              image/text-to-3D grounding, image/text-to-3D generation, and 3D completion.
+            </li>
+        </ul>
+        This project can lead to publications in major computer vision and machine learning conferences such as CVPR, ECCV, ICCV, and NeurIPS.
+        <br><br> 
+
+
+        <b><font size=3>Requirements</font></b> <br>
+        We are looking for strongly motivated candidates with an interest in machine learning, computer vision and natural language processing. 
+        The project requires a strong background in applied mathematics and excellent programming skills (mostly in Python). 
+        If we find a mutual match the project can lead to a PhD in the Willow group.
+        <br><br>
+
+        <div id="ref1">
+        <b><font size=3>References</font></b> <br>
+        [1] Guo Y, Wang H, Hu Q, et al. Deep learning for 3D point clouds: A survey. IEEE T-PAMI 2020.<br>
+        [2] Gan Z, Li L, Li C, et al. Vision-language pre-training: Basics, recent advances, and future trends. Foundations and Trends in Computer Graphics and Vision, 2022.<br>
+        [3] Jatavallabhula K M, Kuwajerwala A, Gu Q, et al. Conceptfusion: Open-set multimodal 3D mapping. RSS, 2023.<br>
+        [4] Hong Y, Zhen H, Chen P, et al. 3D-LLM: Injecting the 3D world into large language models. arXiv preprint arXiv:2307.12981, 2023.<br>
+        [5] Nichol A, Jun H, Dhariwal P, et al. Point-e: A system for generating 3D point clouds from complex prompts. arXiv preprint arXiv:2212.08751, 2022.<br>
+        [6] Liu M, Shi R, Kuang K, et al. OpenShape: Scaling Up 3D Shape Representation Towards Open-World Understanding. NeurIPS 2023.<br>
+        [7] Zhou J, Wang J, Ma B, et al. Uni3D: Exploring Unified 3D Representation at Scale. arXiv preprint arXiv:2310.06773, 2023.<br>
+        [8] Deitke M, Schwenk D, Salvador J, et al. Objaverse: A universe of annotated 3D objects, CVPR 2023.<br>
+        [9] Deitke M, Liu R, Wallingford M, et al. Objaverse-xl: A universe of 10m+ 3D objects. arXiv preprint arXiv:2307.05663, 2023.<br>
+        [10] Ho J, Jain A, Abbeel P. Denoising diffusion probabilistic models. NeurIPS 2020.<br>
+        [11] Wei C, Mangalam K, Huang P Y, et al. Diffusion Models as Masked Autoencoders. ICCV 2023.<br>
+        [12] Rombach R, Blattmann A, Lorenz D, et al. High-resolution image synthesis with latent diffusion models. CVPR 2022.<br>
+        [13] Luo S, Hu W. Diffusion probabilistic models for 3d point cloud generation. CVPR 2021.<br>
+        </div>
+      
+      </td>
+      </tr>
+      </tbody></table>
+
+    <br><br><br><br>
+    </div>
+
+
+
+
+
+
+
+  <!--- Topic 2 -->
+
+      <div id = "topic2" class="topic">
+          
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+
+          
+        <heading>Internship topic : X-embodiment: learning robotic manipulation at scale</heading>
+        <br><br>
+        <b><font size=3>Advisors :</font></b> <a href="https://cshizhe.github.io/">Shizhe Chen</a> &lt;shizhe.chen@inria.fr&gt;, 
+                                  <a href="https://scaron.info/">Stéphane Caron</a> &lt;stephane.caron@inria.fr&gt;, 
+                                  Cordelia Schmid &lt;cordelia.schmid@inria.fr&gt;
+        <br>
+        <b><font size=3>Location :</font></b> Willow Group, Inria Paris
+        <br><br>
+        
+        <figure>
+        <img class="myImg" src="data/internships/Xembodiment.png" alt="Internship topic image on X-embodiment: learning robotic manipulation at scale"
+        style="width:100%;max-width:100%" class="hoverZoomLink">
+        <figcaption>Figure 1: The Open X-embodiment dataset <a href="#ref2">[1]</a> contains diverse behaviors, robot embodiments and environments, and enables learning generalized robotic policies </figcaption>
+      </figure>
+        
+        
+
+        <b><font size=3>Motivation</font></b> <br>
+
+        Training high-capacity models on large-scale datasets has led to great success in many fields such as natural language understanding and computer vision. 
+        However, such a technique is hard to apply in robotics due to limited data. Recently, an ensembled robotic dataset <a href="#ref2">[1]</a> has been released containing 1M episodes 
+        of 527 skills (160266 tasks) from 22 different robots, and has shown to be beneficial to improve performance and develop emergent skills across robots. 
+        However, it is still challenging to unify different robot sensors and action spaces and to generalize to new scenarios with new camera configurations and embodiments. 
+        This project aims at exploring representations <a href="#ref2">[2,3]</a>, action policies <a href="#ref2">[4]</a> and learning algorithms <a href="#ref2">[5,6]</a> that can transfer 
+        from the large-scale real robot data to different robots such as the UR5 robot arm in our team at Inria.
+        <br><br>
+
+        <b><font size=3>Description</font></b> <br>
+
+        <ul class="nested-list">
+            <li>
+              Read and understand the robot learning papers <a href="#ref2">[2-6]</a>.
+            </li>
+            <li>
+              Investigate modular approaches to take advantage of the large-scale real robot data
+              <ul class="nested-list">
+                <li>
+                  Design a robot-agnostic action representation to effectively leverage different robotic data, e.g., 
+                  waypoint as middle-layer action representation
+                </li>
+                <li>
+                  Explore policies to learn diverse skills with multimodal distribution such as diffusion policies
+                </li>
+                <li>
+                  Investigate algorithms to improve learning from offline data
+                </li>
+              </ul>
+            </li>
+            <li>
+              Perform evaluations in a simulator and on a real robot
+            </li>
+        </ul>
+        This project can lead to publications in major robot learning and computer vision conferences such as CoRL, RSS, ICRA, IROS, CVPR etc.
+        <br><br> 
+
+
+        <b><font size=3>Requirements</font></b> <br>
+        We are looking for strongly motivated candidates with an interest in machine learning, computer vision and natural language processing. 
+        The project requires a strong background in applied mathematics and excellent programming skills (mostly in Python). 
+        If we find a mutual match the project can lead to a PhD in the Willow group.
+        <br><br>
+
+        <div id="ref2">
+        <b><font size=3>References</font></b> <br>
+        [1] Padalkar A, Pooley A, Jain A, et al. Open X-embodiment: Robotic learning datasets and RT-X models. arXiv preprint arXiv:2310.08864, 2023.<br>
+        [2] Radosavovic I, Xiao T, James S, et al. Real-world robot learning with masked visual pre-training. CoRL 2022.<br>
+        [3] Radosavovic I, Shi B, Fu L, et al. Robot Learning with Sensorimotor Pre-training. CoRL 2023.<br>
+        [4] Shi L X, Sharma A, Zhao T Z, et al. Waypoint-based imitation learning for robotic manipulation. CoRL 2023.<br>
+        [5] Chebotar Y, Vuong Q, Irpan A, et al. Q-transformer: Scalable offline reinforcement learning via autoregressive q-functions. CoRL 2023.<br>
+        [6] Alakuijala M, Dulac-Arnold G, Mairal J, et al. Learning reward functions for robotic manipulation by observing humans. ICRA 2023.<br>
+        </div>
+
+        </td>
+        </tr>
+        </tbody></table>
+
+      <br><br><br><br>
+      </div>
+
+
+
+
+
+  <!--- Topic 3 -->
+
+      <div id = "topic3" class="topic">
+          
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+
+          
+        <heading>Internship topic : Chapter generation and grounding in long-term videos</heading>
+        <br><br>
+        <b><font size=3>Advisors :</font></b> <a href="https://cshizhe.github.io/">Shizhe Chen</a> &lt;shizhe.chen@inria.fr&gt;, Cordelia Schmid &lt;cordelia.schmid@inria.fr&gt;
+        <br>
+        <b><font size=3>Location :</font></b> Willow Group, Inria Paris
+        <br><br>
+
+
+        <figure>
+          <img class="myImg" src="data/internships/chapterGeneration1.png" 
+               style="width:100%;max-width:100%" class="hoverZoomLink">
+          <figcaption>Figure 1: A video with user-annotated chapters in VidChapters-7M </figcaption>
+        </figure>
+        
+        <figure>
+          <img class="myImg" src="data/internships/chapterGeneration2.png" 
+               style="width:100%;max-width:100%" class="hoverZoomLink">
+          <figcaption>Figure 2: The three tasks defined for VidChapters-7M </figcaption>
+        </figure>
+
+        
+
+        <b><font size=3>Motivation</font></b> <br>
+
+        The increasing volume of videos online underscores the need for automatic techniques to index and search video contents. While searching for 
+        short video clips has received considerable attention, long-term video indexing and searching remain challenging and have been less explored. 
+        A compelling solution to facilitate long-term video indexing and searching is to segment long-term videos into chapters as depicted in Figure 1. 
+        These chapters are structured and labeled with a short, concise description, enabling users to quickly navigate to areas of interest. 
+        A recent work <a href="#ref3">[1]</a> has introduced the VidChapter-7M benchmark dataset for the problem, containing 817K videos with speech transcripts and user-annotated chapters. 
+        This project aims to tackle the three tasks defined for VidChapters-7M (see Figure 2), including video chapter generation that requires 
+        automatic video segmentation and captioning, video chapter generation with ground-truth boundaries, and video chapter grounding 
+        that needs to localize the desired video segment given the chapter title.
+        <br><br>
+
+        <b><font size=3>Description</font></b> <br>
+
+        <ul class="nested-list">
+            <li>
+              Read the dataset paper <a href="#ref3">[1]</a> and reproduce the state-of-the-art methods <a href="#ref3">[2,3]</a> on the VidChapters-7M 
+              and two evaluation datasets <a href="#ref3">[4,5]</a> with the released codes and models
+            </li>
+            <li>
+              Extend <a href="#ref3">[2,3]</a> to train a unified backbone using multi-modal inputs with vision and speech transcripts and separate decoders for video chapter generation and grounding.
+            </li>
+            <li>
+              Explore diffusion models <a href="#ref3">[6]</a> as the decoders to iteratively segment and ground the long-term videos, inspired by diffusion models for object detection <a href="#ref3">[7]</a>.
+
+            </li>
+        </ul>
+        This project can lead to publications in major computer vision and machine learning conferences such as CVPR, ECCV, ICCV, and NeurIPS.
+        <br><br> 
+
+
+        <b><font size=3>Requirements</font></b> <br>
+        We are looking for strongly motivated candidates with an interest in machine learning and computer vision. 
+        The project requires a strong background in applied mathematics and excellent programming skills (mostly in Python). 
+        If we find a mutual match, the project can lead to a joint PhD in video understanding at Ecole Polytechnique and in the Willow Group of Inria Paris.  
+        <br><br>
+
+        <div id="ref3">
+        <b><font size=3>References</font></b> <br>
+        [1] Yang A, Nagrani A, Laptev I, et al. VidChapters-7M: Video Chapters at Scale. NeurIPS, 2023. [<a href="https://antoyang.github.io/vidchapters.html">Project page</a>]<br>
+        [2] Yang A, Nagrani A, Seo P H, et al. Vid2seq: Large-scale pretraining of a visual language model for dense video captioning. CVPR 2023.<br>
+        [3] Lei J, Berg T L, Bansal M. Detecting moments and highlights in videos via natural language queries. NeurIPS 2021.<br>
+        [4] Zhou L, Xu C, Corso J. Towards automatic learning of procedures from web instructional videos. AAAI 2018.<br>
+        [5] Huang G, Pang B, Zhu Z, et al. Multimodal pretraining for dense video captioning. AACL-IJCNLP 2020.<br>
+        [6] Ho J, Jain A, Abbeel P. Denoising diffusion probabilistic models. NeurIPS 2020.<br>
+        [7] Chen S, Sun P, Song Y, et al. Diffusiondet: Diffusion model for object detection. CVPR 2023.<br>
+        </div>
+
+        </td>
+        </tr>
+        </tbody></table>
+
+      <br><br>
+      </div>
+
+        
+        
+        <!--- Footer section -->
+        
+        <div id="footer">
+        <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:center;font-size:small;">
+                <div class="nav-links">
+                  <a class="nav-link" href="/jobs">Job offers</a>
+                  <span class="divider">|</span>
+                  <a class="nav-link" href="/">Homepage</a>
+                </div>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        </div>
+       
+
+
+    <script>
+      document.querySelector('#jobs-button').addEventListener('click', function() {
+          window.location.href = '/jobs';
+      });
+      document.querySelector('.home-button').addEventListener('click', function() {
+          window.location.href = '/';
+      });
+
+
+      window.onload = function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var div = urlParams.get('topic');
+
+        if (div) {
+          document.getElementById('topic' + div).style.display = 'block';
+        }
+        else {
+          document.getElementById('topic1').style.display = 'block';
+        }
+
+        var modal = document.getElementById("myModal");
+        var imgs = document.getElementsByClassName("myImg");
+        var modalImg = document.getElementById("imgDisplay");
+        var captionText = document.getElementById("caption");
+
+        for (let i = 0; i < imgs.length; i++) {
+          imgs[i].onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.nextElementSibling.innerHTML;
+            captionText.style.color = "grey"; // make the caption grey
+          }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+      };
+    </script>
+
+
+
+</body>
+
+</html>
